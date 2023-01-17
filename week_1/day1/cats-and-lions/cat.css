@@ -1,0 +1,40 @@
+body{
+
+	padding: 0;
+	margin: 0;
+	padding-top: 40px;
+}
+
+h1{
+	color: red
+}
+
+h2{
+	color: blue
+
+}
+.media{
+	width: 100%;
+	height: auto;
+}
+
+.highlight{
+	border-radius: 2px;
+	background-color: yellow;
+	padding: 0 2px 0 2px
+}
+
+ol{
+	list-style-type: upper-roman;
+}
+
+ul{
+	padding-left: 40px;
+}
+
+.sense-wrapper{
+	padding-left: 30px;
+}
+
+
+}
