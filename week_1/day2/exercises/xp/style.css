@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+
+}
+li{
+    display: inline
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+
+
+  img{
+    width: 50px;
+    padding-left: 5px;
+
+  }
+
+  .left{
+     float: right;
+     margin-right: 20px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     padding-right: 40px;
+     color: white;
+     text-decoration: none;
+  }
+
+  footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center; 
+    font-size: 30px;
+  }
+  body{
+    position: relative;
+  }
+  img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+
+  .row {
+    position: relative;
+    display: flex;
+  }
+  
+  .column {
+    position: relative;
+    flex: %; 
+    padding: 5px;
+  }
+
+  .top-left {
+font-size: 10px;
+    position: absolute;
+    top: 17px;
+    left: 10px;
+    background-color: bisque;
+    border-radius: 50%;
+  }
+
+  .top-right{
+    font-size: 10px;
+    position: absolute;
+    top: 17px;
+    left: 130px;
+    background-color: brown;
+    border-radius: 50%;
+  }
+
+  .description{
+    
+   text-align: center; 
+   
+
+  }
+
+  .price{
+    color: aquamarine;
+    text-align: center;
+  }
+
+  button{
+    background-color: aquamarine;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  button:hover{
+    background-color: aqua;
+    transition: ease-in-out ;
+  }

@@ -1,0 +1,42 @@
+
+
+
+
+#leftbg{
+    background-repeat: no-repeat;
+    width:50%;
+    position:absolute;
+    left:0px;
+    height: 100%;
+}
+
+#rightbg{
+    background-repeat: no-repeat;
+    width:50%;
+    position:absolute;
+    right:0px;
+    height: 100%;
+}
+
+.text{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    margin-bottom: 10px;
+   
+  }
+
+  .text2{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+
+  a{
+    text-decoration: none;
+    
+  .fa-solid fa-user-plus{
+    font-size: 20px;
+    color: #fff;
+  }
+
