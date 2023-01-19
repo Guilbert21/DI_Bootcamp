@@ -3,7 +3,7 @@ body{
     margin: 0;
     
 }
-nav{
+/* nav{
    display: flex;
     position: fixed;
     top: 0;
@@ -11,11 +11,11 @@ nav{
     width: 100%;
     height: 60px;
     background-color: black;
-    overflow: hidden;
+    overflow: hidden; */
 }
 .left{
     color: aliceblue;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 40px;
     font-size: 30px;
     font-family: 'Reem Kufi', sans-serif; 
@@ -70,14 +70,14 @@ img{
     width:100%;
     position:absolute;
     bottom: 0;
-    height: 86%;
+    height: 93%;
 }
 
 .description{
     z-index: 3;
     width: 60%;
-    padding-left: 150px;
-    padding-top:175px;
+    padding-left: 175px;
+    padding-top:350px;
 
 }
 
@@ -90,6 +90,52 @@ color: aliceblue;
 p{
     color: aliceblue;
 }
+
+@media  screen and (min-height:600px) {
+    .thor{
+        font-size:25px;
+    }
+    nav{
+        background-color: yellow;  
+    }
+    .left{
+        color: black;
+    }
+    a{
+        color: black;
+    }
+
+    
+}
+
+@media screen and (min-width:600px){
+    .thor{
+        font-size:35px;
+
+    }
+}
+
+@media screen and (min-width:992px)and (max-width: 1999px) {
+   nav{
+    background-color:red;
+      }
+   .left{
+    color: white;
+        }
+
+   }
+
+   @media screen and (min-width:1200px){
+    nav{
+        background-color:black;
+    
+    }
+    .thor{
+        color:white;
+    }
+   } 
+
+
 
 
 
