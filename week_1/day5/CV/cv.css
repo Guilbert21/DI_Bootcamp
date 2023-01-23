@@ -1,0 +1,82 @@
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.first{
+    margin-top: 20px;
+    font-size: 40px;
+font-family: 'Zen Antique', serif;
+}
+
+h1{
+font-family: 'Zen Antique', serif;
+font-size: 50px;
+}
+
+.line-1{
+    border-bottom: 5px solid rgb(222, 190, 62);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 7%;
+}
+            
+
+
+ img {
+        border-bottom: 15px solid rgb(222, 190, 62);
+        border-radius: 4px;
+        padding: 5px;
+        position: absolute;
+        top: 8px;
+        right: 25px;
+        
+        
+        
+}
+
+.line{
+    border-bottom: 5px solid rgb(222, 190, 62);
+            margin-top: 120px;
+            width: 100%;
+}
+
+.right{
+   width: 50%;
+    position: absolute;
+    top: 366px;
+    right: 25px;
+}
+
+.line-2{
+    border-bottom: 5px solid rgb(222, 190, 62);
+            margin-top: 50px;
+            width: 100%;
+
+}
+
+.vl {
+    border-left: 6px solid rgb(222, 190, 62);
+    height: 775px;
+    position: absolute;
+    left: 35%;
+    margin-left: -3px;
+    top: 366px;
+  }
+
+  .fourth{
+    width: 50%;
+    position: absolute;
+    top: 855px;
+    right: 25px;
+  }
+
+  .line-3{
+    border-bottom: 5px solid rgb(222, 190, 62);
+            margin-top: px;
+            width: 100%;
+  }
+
+    

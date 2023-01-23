@@ -1,0 +1,108 @@
+body{
+  
+    margin: 0;
+    padding: 0;
+}
+
+
+  p{
+    color:white;
+  }
+
+  .container{
+
+    width: 100%;
+    
+  }
+
+    .container {
+        position: relative;
+        text-align: center;
+        width:100%;
+       
+
+    }
+  .bold{
+    margin-top: 50px;
+    color: rgb(255, 213, 0);
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+
+  .text-center{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(46, 70, 9);
+  }
+
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+
+  .nft{
+    
+    border-radius:50% ;
+    margin-top: 15px;
+    padding-right: 0;
+  }
+
+  .container{
+    margin-top: 50px;
+    padding-right: 0;
+  }
+
+  .second{
+    border-left:2px solid ;
+  }
+
+  h1{
+    margin-top: 20px !important;
+  }
+
+  .box{
+    size: 100px 100px;
+    
+  }
+
+  .strong{
+  color: black;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .img{
+    
+    padding: 10px;
+  }
+
+  a{
+    text-decoration: none;
+    color: rgb(46, 70, 9);
+  }
+
+  .card{
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    float: left;
+    align-items: center;
+  }
+
+  form{
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+
+  
+  
+
+  
