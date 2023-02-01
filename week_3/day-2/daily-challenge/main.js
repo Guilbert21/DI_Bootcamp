@@ -1,64 +1,92 @@
-const libForm = document.getElementById("libform")
-function getInputValue(e){
-   e.preventDefault();
-    let noun = document.getElementById("noun").value;
-    console.log(noun);
-    let adjective = document.getElementById("adjective").value;
-    console.log(adjective);
-    let Name = document.getElementById("person").value;
-    console.log(Name);
-    let verb = document.getElementById("verb").value;
-    console.log(verb);
-    let place = document.getElementById("place").value;
-    console.log(place);
-    submitOK = "true"
+const button = getButton()
+const shuffleButton = document.getElementById("shuffle")
+button?.addEventListener("click", handleClick)
+shuffleButton?.addEventListener("click", shuffleStory)
 
-    if (noun == "") {
-        alert("No noun has been enterd");
-        submitOK = "false";
-      }
-
-      if (adjective == "") {
-        alert("No adjective has been entered");
-        submitOK = "false";
-      }
-
-      if (Name == "") {
-        alert("No name has been entered");
-        submitOK = "false";
-      }
-
-      if (verb == "") {
-        alert("No verb has been entered");
-        submitOK = "false";
-      }
-
-      if (place== "") {
-        alert("No place has been entered");
-        submitOK = "false";
-      }
-    Event.preventDefault();
+function getFormValue(){
+const noun = document.getElementById("noun").value
+const adjective = document.getElementById("adjective").value
+const person = document.getElementById("person").value
+const verb = document.getElementById("verb").value
+const place = document.getElementById("place").value
+return {
+  noun: noun,
+  adjective: adjective,
+  person: person,
+  verb: verb,
+  place: place
 }
-// Form.onsubmit = getInputValue()
-getInputValue(Event)
+}
+
+function handleClick(e){
+  e.preventDefault()
+  const formValue = getFormValue()
+  const noun = formValue.noun
+  const adjective = formValue.adjective
+  const person = formValue.person
+  const verb = formValue.verb
+  const place = formValue.place
+
+if (noun == "" || adjective == "" || person == "" || verb == "" || place == "") return
+
+const story = writeStory(noun, adjective, person, verb, place)
+console.log("story", story)
+
+appendStoryToPage(story)
+}
+
+function shuffleStory(){
+  const formValue = getFormValue()
+  const noun = formValue.noun
+  const adjective = formValue.adjective
+  const person = formValue.person
+  const verb = formValue.verb
+  const place = formValue.place
+
+  let story
+  const randomNumber = generateRandomNumer()
+  if (randomNumber===1){
+    story = writeStory(noun, adjective, person, verb, place)
+  }else if (randomNumber===2){
+  story = writeStory2(noun, adjective, person, verb, place)
+} else {
+  story = writeStory3(noun, adjective, person, verb, place)
+}
+appendStoryToPage(story)
+}
+
+function generateRandomNumer(){
+  return Math.floor(Math.random()*3) + 1
+}
+
+
+function appendStoryToPage(story){
+  const para = document.getElementById("story")
+  const span = document.createElement("span")
+  span.innerText = story
+  para.textContent = ""
+  para.appendChild(span)
+}
+
+function writeStory(noun, adjective, person, verb, place){
+return " i like to look at ${noun}, i think that they are ${adjective}. my favouriteperson is ${person} we often ${verb} together when we are in ${place} "
+}
+
+function writeStory2(noun, adjective, person, verb, place){
+  return " i like t ${noun}, i think  ${adjective},person is ${person} we  ${verb} together ${place} "
+
+}
+
+function writeStory3(noun, adjective, person, verb, place){
+  return " this ${noun}, think ${adjective}, because ${person} ${verb} in ${place} "
+}
+
+function getButton() {
+  return document.getElementById("lib-btton")
+}
 
 
 
-// // const wrapper = document.querySelector(".wrapper"),
-// // form = document.querySelector("#libform"),
-// // submitInput = form[0].querySelector('input[type = "submit')
-
-// // function getDataForm(e){
-// //     e.preventDefault();
-
-// //     let formData = new FormData(form[0]);
-
-// //     console.log(formData.get("#noun") + " " + formData.get("#adjective")+ " " +formData.get("#person")+ " " +formData.get("#verb")+ " " +formData.get("#place"))
-
-// // }
-// // document.addEventListener("DOMContentLoaded",function(){
-// //     submitInput.addEventListener("click", getDataForm,false)
-// // },false)
 
 
 
