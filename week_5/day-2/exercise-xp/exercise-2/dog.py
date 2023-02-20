@@ -1,3 +1,5 @@
+#exercise-2
+
 class Dog():
     def __init__(self, name, age, weight):
         self.name = name
@@ -5,11 +7,10 @@ class Dog():
         self.weight = weight
 
     def bark(self):
-        print(f"{self.name} is barking")
+        return f"{self.name} is barking"
 
     def run_speed(self):
-        speed = (self.weight/self.weight *10)
-        print(f"{self.name} running speed is {speed}")
+        return self.weight/self.weight *10
 
     def fight(self, other_dog):
         self_score = self.run_speed() * self.weight
