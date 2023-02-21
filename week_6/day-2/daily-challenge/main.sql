@@ -1,0 +1,4 @@
+-- question1: output 2
+-- question2: output 1
+-- question3: output 0
+-- question4: output 1
