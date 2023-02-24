@@ -1,14 +1,26 @@
 import requests
 import random
-import sqlite3
+# import sqlite3
+import psycopg2
+
+
+HOSTNAME = 'localhost'
+USERNAME = 'guilbert'
+PASSWORD = 'guilly'
+DATABASE = 'restCountries'
 
 url = "https://restcountries.com/v3.1/all"
 
 response = requests.get(url)
 countries = response.json()
 
-conn = sqlite3.connect("countries.db")
-cursor = conn.cursor()
+postgres_db_connection = psycopg2.connect(
+    host=HOSTNAME, 
+    user=USERNAME, 
+    password=PASSWORD, 
+    dbname=DATABASE )
+
+cursor = postgres_db_connection.cursor()
 
 cursor.execute("""CREATE TABLE IF NOT EXISTS countries (
                     name TEXT,
@@ -28,5 +40,5 @@ for _ in range(10):
     
     cursor.execute(name, capital, flag, subregion, population)
 
-conn.commit()
-conn.close()
+postgres_db_connection.commit()
+postgres_db_connection.close()
