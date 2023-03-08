@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+
+    {% block content %}
+      <h1>{{person.name}}</h1>
+      <p>Email{{person.email}}</p>
+      <p>Address:{{person.address}}</p>
+      <p>Phone:{{person.phone}}</p>
+    {% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+
+     {% block content %}
+     {% if persons %}
+         <ul>
+            {% for person in persons %}
+              <li><a href="{% url 'person' person.id %}">{{person.name}}</a></li>
+            {% endfor %}
+         </ul>
+      {% else %}
+         <p>No persons found</p>
+      {% endif %}
+    {% endblock %}
+    
+</body>
+</html>
