@@ -1,0 +1,4 @@
+django
+Autopep8
+psycopg2
+pillow
