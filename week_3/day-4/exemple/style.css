@@ -3,24 +3,12 @@ body{
     padding: 0px;
 }
 
-.img{
-    display: flex;
-}
-
-#banner{
-    height: 30px;
-    width: 250px;
+#parent{
     background-color: aquamarine;
     border-radius: 5px;
     border: 5px solid rgb(123, 114, 114);
-    /* display: flex; */
+    display: none;
     align-items: center;
-    opacity: 0.5;
-    margin-left: 40%;
-    margin-top: 40%;
+}
 
-}
-p{
-    display: flex;
-    margin-left: 20%;
-}
+

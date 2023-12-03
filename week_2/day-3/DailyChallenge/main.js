@@ -1,4 +1,4 @@
-const num = 6
+const num = 50
 // let stars = ""
 // for (let x = 0; x < num; x++) {
 //     stars = stars + " * " 

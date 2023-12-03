@@ -21,4 +21,3 @@ results = cursor.fetchall()
 print(results)
 
 postgres_db_connection.close()
-

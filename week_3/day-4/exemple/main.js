@@ -1,2 +1,7 @@
-const banner = document.querySelector("#banner")
+
+setTimeout(function(){
+    document.getElementById("parent").style.display = "block";
+}, 5000)
+
+
 

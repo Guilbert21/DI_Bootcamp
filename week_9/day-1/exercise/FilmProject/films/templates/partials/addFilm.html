@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>{% extends 'partials/base.html' %}</title>
+</head>
+<body>
+    {% block content %}
+    {% include 'partials/navbar.html' %}
+
+    <h1>Add a new film</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add film</button>
+    </form>
+{% endblock %}
+
+{% extends 'partials/base.html' %}
+
+{% block title %}
+    Add Film
+{% endblock}
+</body>
+</html>

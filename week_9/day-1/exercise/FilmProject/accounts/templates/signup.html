@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>{% extends 'partials/base.html' %}</title>
 </head>
 <body>
-    {% extends 'partials/base.html' %}
-    
     {% block content %}
-    <h1>Signup</h1>
-    <form action="/accounts/signup" method="POST">
-        {% csrf_token %}
-        {{form.as_p}}
-        <input type="submit" value="Signup">
+  <h2>Sign up</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign up</button>
+  </form>
+{% endblock %}
+
+{% block footer %}
+  {% include 'partials/footer.html' %}
+{% endblock %}
 </body>
 </html>

@@ -38,7 +38,7 @@
 -- SELECT first_name, last_name, length(concat(first_name,last_name)) AS "Length of names" FROM employees;
 
 -- Qu-14
--- SELECT ISNUMERIC(first_name) FROM employees;
+select * FROM employees WHERE first_name ~ '\d'
 
 -- Qu-15
 -- SELECT * FROM employees FETCH FIRST 10 ROWS ONLY;

@@ -1,39 +1,17 @@
-<!-- he homepage.html file should be created in the templates folder. This file extends the base.html template and includes the navbar.html file.
-Hint: Check out the Documentation to understand how to include templates -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    {% extends 'partials/base.html' %}
 
-{% extends 'partials/base.html' %}
+    {% block content %}
+    {% include 'partials/navbar.html' %}
 
-{% block title %}
-{{ page_title| default: "Homepage"}}
+    <h1>Welcome to the FilmProject homepage!</h1>
 {% endblock %}
 
-{% block content %}
-
-{% include 'partials/navbar.html' %}
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h1>Homepage</h1>
-        </div>
-    </div>
-</div>
-{% endblock %}
-
-{% extends 'partials/base.html' %}
-
-{% block title %}
-{{ page_title| default: "Homepage"}}
-{% endblock %}
-
-{% block content %}
-
-{% include 'partials/navbar.html' %}
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h1>Homepage</h1>
-        </div>
-    </div>
-</div>
-{% endblock %} 
-
+</body>
+</html>

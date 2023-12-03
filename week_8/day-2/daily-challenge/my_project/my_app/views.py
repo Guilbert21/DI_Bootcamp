@@ -20,4 +20,5 @@ def person_by_name(request, name):
     else:
         return HttpResponse('Person does not exist')
 
+
 # Create your views here.

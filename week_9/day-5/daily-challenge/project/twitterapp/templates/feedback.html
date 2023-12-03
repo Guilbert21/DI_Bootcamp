@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Latest Stock Feedback on Twitter</h1>
+  <ul>
+    {% for tweet in tweets %}
+      <li>{{ tweet.text }}</li>
+    {% empty %}
+      <li>No feedback found.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

@@ -2,20 +2,17 @@
 <html lang="en">
 <head>
    
-    <title>Document</title>
+    <title>{% extends 'partials/base.html' %}</title>
 </head>
 <body>
-    
-    {% extends 'partials/base.html' %}
-
-{% block title %}Profile{% endblock %}
-
 {% block content %}
-    {% include 'partials/navbar.html' %}
-    <h1>{{ user.username }}'s Profile</h1>
-    <p>First Name: {{ user.first_name }}</p>
-    <p>Last Name: {{ user.last_name }}</p>
+  <h2>Profile</h2>
+  <p>Username: {{ user.username }}</p>
+  <p>First name: {{ user.first_name }}</p>
+  <p>Last name: {{ user.last_name }}</p>
 {% endblock %}
 
-</body>
+{% block footer %}
+  {% include 'partials/footer.html' %}
+{% endblock %}
 </html>

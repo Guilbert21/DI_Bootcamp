@@ -14,13 +14,31 @@
 
 // console.log(age)
 
-let str = "Happy BirthDay";
-let patt = /birthday/i;
-let result = str.match(patt);
-console.log(result); //returns true
+// let age = prompt("What is your age?");
 
-if (result){
-    console.log('Yes')
-} else{
-    console.log('No');
-}
+// if (age < 18) {
+//   alert("Sorry, you are too young to drive this car. Powering off.");
+// } else if (age == 18) {
+//   alert("Congratulations on your first year of driving. Enjoy the ride!");
+// } else {
+//   alert("Powering On. Enjoy the ride!");
+// }
+
+
+// exercise-2
+// Step 1
+const user = {
+    username: "myUsername",
+    password: "myPassword"
+  };
+  
+  // Step 2
+  const database = [user];
+  
+  // Step 3
+  const newsfeed = [
+    { username: "user1", timeline: "This is my first post" },
+    { username: "user2", timeline: "Just had a great day!" },
+    { username: "user3", timeline: "Feeling excited about my upcoming trip!" }
+  ];
+  
